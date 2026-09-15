@@ -1,0 +1,95 @@
+export const BUSINESS_INFO = {
+  name: 'Stylish Furniture',
+  category: 'Shop / Supermarket / Furniture Store',
+  phone: '+92 305 8373021',
+  phoneRaw: 'tel:+923058373021',
+  address: 'G7MH+747 stylish furniture, Nagra Rd, Nagra Town Lahore, 54000, Pakistan',
+  locationSummary: 'Nagra Rd, Nagra Town Lahore, 54000, Pakistan',
+  googleMapsEmbedUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.5!2d74.33!3d31.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zRzdrSDcrNzQ3IHN0eWxpc2ggZnVybml0dXJlLCBOYWdyYSBSZCwgTmFncmEgVG93biBMYWhvcmUsIDU0MDAwLCBQYWtpc3Rhbg!5e0!3m2!1sen!2s!4v1690000000000!5m2!1sen!2s',
+  mapSearchUrl: 'https://www.google.com/maps/search/?api=1&query=G7MH%2B747+stylish+furniture%2C+Nagra+Rd%2C+Nagra+Town+Lahore%2C+54000%2C+Pakistan',
+  socialMedia: null, // Strictly None provided
+};
+
+export const ROOMS = [
+  {
+    id: 'living-room',
+    number: '01',
+    name: 'Living Room',
+    path: '/rooms/living-room',
+    description: 'Central comfort seating, refined lounge arrangements, and tailored living space compositions.',
+    heroImage: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1600&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80',
+    categories: ['Sofas', 'Tables', 'Chairs', 'Storage'],
+  },
+  {
+    id: 'bedroom',
+    number: '02',
+    name: 'Bedroom',
+    path: '/rooms/bedroom',
+    description: 'Serene sleep environments, architectural bedframes, wardrobe units, and bedside balances.',
+    heroImage: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&w=800&q=80',
+    categories: ['Beds', 'Wardrobes', 'Bedside Tables', 'Bedroom Storage'],
+  },
+  {
+    id: 'dining-room',
+    number: '03',
+    name: 'Dining Room',
+    path: '/rooms/dining-room',
+    description: 'Communal dining surfaces, sculptural seating, and curated entertaining spaces.',
+    heroImage: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1600&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=800&q=80',
+    categories: ['Dining Tables', 'Dining Chairs', 'Storage'],
+  },
+  {
+    id: 'office',
+    number: '04',
+    name: 'Office',
+    path: '/rooms/office',
+    description: 'Focused workspaces, ergonomic task seating, structured desks, and executive study units.',
+    heroImage: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80',
+    categories: ['Office Chairs', 'Desks', 'Tables', 'Storage'],
+  },
+  {
+    id: 'storage',
+    number: '05',
+    name: 'Storage',
+    path: '/furniture?room=Storage',
+    description: 'Cabinets, credenzas, media consoles, and modular shelving units for organized spaces.',
+    heroImage: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1600&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80',
+    categories: ['Storage', 'Cabinets', 'Shelving'],
+  },
+  {
+    id: 'essentials',
+    number: '06',
+    name: 'Furniture Essentials',
+    path: '/furniture?room=Furniture Essentials',
+    description: 'Timeless accent pieces, statement occasional tables, and multifunctional furnishings.',
+    heroImage: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1600&q=80',
+    cardImage: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80',
+    categories: ['Chairs', 'Tables', 'Storage'],
+  },
+];
+
+export const CATALOG_CATEGORIES = [
+  'All',
+  'Sofas',
+  'Beds',
+  'Dining Furniture',
+  'Tables',
+  'Chairs',
+  'Storage',
+  'Office Furniture',
+];
+
+export const ROOM_FILTER_OPTIONS = [
+  'All',
+  'Living Room',
+  'Bedroom',
+  'Dining Room',
+  'Office',
+  'Storage',
+  'Furniture Essentials',
+];

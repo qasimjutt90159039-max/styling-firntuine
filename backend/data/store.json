@@ -1,0 +1,73 @@
+{
+  "products": [],
+  "categories": [
+    {
+      "_id": "cat_1",
+      "name": "Sofas",
+      "description": "Living room seating, armchairs, and sectional couches for home relaxation.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.761Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    },
+    {
+      "_id": "cat_2",
+      "name": "Beds",
+      "description": "Solid frames, headboards, and bedroom sleep systems.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.762Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    },
+    {
+      "_id": "cat_3",
+      "name": "Dining Furniture",
+      "description": "Tables, dining chairs, and banquet seating setups.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.762Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    },
+    {
+      "_id": "cat_4",
+      "name": "Tables",
+      "description": "Coffee tables, side tables, console tables, and study desks.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.762Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    },
+    {
+      "_id": "cat_5",
+      "name": "Chairs",
+      "description": "Accent chairs, dining chairs, and ergonomic study seats.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.762Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    },
+    {
+      "_id": "cat_6",
+      "name": "Storage",
+      "description": "Wardrobes, media units, credenzas, and shelving systems.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.762Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    },
+    {
+      "_id": "cat_7",
+      "name": "Office Furniture",
+      "description": "Desks, executive chairs, conference tables, and office storage.",
+      "status": "active",
+      "createdAt": "2026-09-15T06:47:00.762Z",
+      "updatedAt": "2026-09-15T06:47:00.762Z"
+    }
+  ],
+  "gallery": [],
+  "inquiries": [],
+  "users": [
+    {
+      "_id": "user_admin",
+      "username": "admin",
+      "password": "$2b$10$hwiMYQG7vrpvAYMN1MQPgOrQvouffl4KXAELOiNMt8QzGu98Qpm8O",
+      "role": "admin",
+      "createdAt": "2026-09-15T06:47:00.900Z",
+      "updatedAt": "2026-09-15T06:47:00.900Z"
+    }
+  ]
+}
