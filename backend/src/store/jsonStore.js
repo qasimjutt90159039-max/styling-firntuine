@@ -6,11 +6,18 @@ import bcrypt from 'bcryptjs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const dataDir = path.join(__dirname, '../../data');
+// In Vercel serverless environment, local repo directories are read-only; /tmp is writable
+const dataDir = process.env.VERCEL
+  ? path.join('/tmp', 'stylish_data')
+  : path.join(__dirname, '../../data');
 const storeFile = path.join(dataDir, 'store.json');
 
-if (!fs.existsSync(dataDir)) {
-  fs.mkdirSync(dataDir, { recursive: true });
+try {
+  if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+  }
+} catch (e) {
+  console.warn('Directory create notice:', e.message);
 }
 
 const defaultData = {
@@ -90,13 +97,16 @@ const defaultData = {
 function readData() {
   try {
     if (!fs.existsSync(storeFile)) {
-      fs.writeFileSync(storeFile, JSON.stringify(defaultData, null, 2), 'utf-8');
+      try {
+        fs.writeFileSync(storeFile, JSON.stringify(defaultData, null, 2), 'utf-8');
+      } catch (err) {
+        return JSON.parse(JSON.stringify(defaultData));
+      }
       return JSON.parse(JSON.stringify(defaultData));
     }
     const raw = fs.readFileSync(storeFile, 'utf-8');
     return JSON.parse(raw);
   } catch (err) {
-    console.error('Error reading json store:', err);
     return JSON.parse(JSON.stringify(defaultData));
   }
 }
@@ -105,7 +115,7 @@ function writeData(data) {
   try {
     fs.writeFileSync(storeFile, JSON.stringify(data, null, 2), 'utf-8');
   } catch (err) {
-    console.error('Error writing to json store:', err);
+    console.error('Error writing to json store:', err.message);
   }
 }
 
